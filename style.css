@@ -256,7 +256,46 @@ body {
     position: relative;
     z-index: 5;
 }
+@media screen and (max-width: 768px) {
 
+    .hero-title,
+    .hero-section h1,
+    h1.hero-name {
+        font-size: clamp(2rem, 8vw, 3rem) !important; 
+        line-height: 1.1 !important;
+        letter-spacing: -0.02em !important;
+        word-break: break-word !important; 
+        max-width: 100% !important;
+    }
+
+    .hero-meta,
+    .hero-tags,
+    .meta-row {
+        font-size: 0.75rem !important;
+        flex-wrap: wrap !important;
+        gap: 8px !important;
+        justify-content: flex-start !important;
+    }
+
+    .hero-subtitle,
+    .hero-description,
+    .hero-section p {
+        font-size: 0.95rem !important;
+        line-height: 1.5 !important;
+        max-width: 100% !important;
+    }
+
+    #hero,
+    .hero-section,
+    .hero-content {
+        padding-left: 20px !important;
+        padding-right: 20px !important;
+        width: 100% !important;
+        max-width: 100vw !important;
+        box-sizing: border-box !important;
+        overflow-x: hidden !important;
+    }
+}
 .section { 
     width: 100%; 
     max-width: 100% !important; 
